@@ -1,0 +1,72 @@
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif       ;
+    background-color: wheat;
+    padding: 5px;
+    text-align: center;
+}
+
+.logo{
+    background-color: white;
+    
+}
+
+.portifolio {
+    background-color: #E1CBA5;
+    padding: 10px;
+}
+
+.produto {
+    background-color: #C3B08F;
+    text-align: left;
+    image-rendering: auto;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+    margin-bottom:  20px;
+}
+
+.produto img {
+    width:  100px;
+    border-radius: 20%;
+    padding: 10px;
+    margin-right: 0;
+    
+}
+
+.info-produto {
+    position: relative;
+    flex-grow: 1;
+}
+
+.info-produto p {
+    position: absolute;
+    font-size: 15px;
+    top: 20px;
+    left: 100px;
+}
+
+.info-produto h3 {
+    font-size: 20px;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+.info-produto h4 {
+    position: absolute;
+    left: -15px;
+    top: 100px;
+    margin: 0;
+}
+
+.equipe {
+    image-rendering: auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: #C3B08F;
+}
+
+.equipe img {
+    border-radius: 100%;
+    height: 200px;
+}
