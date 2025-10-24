@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendar jogo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="recomendacao.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="conteudo">
+        <div id="menu"></div>
+        <h2>Me recomende um jogo</h2>
+
+        <div class="container-principal">
+        
+            <form action="script.js" method="post" id="formulario">
+                <div>
+                    <label for="campo-nome">Seu Nome: <input id="no" type="text"> </label>
+                </div>
+
+                <div>
+                    <label for="nome-jogo">Nome do jogo: <input required id="nome-jogo" type="text"> </label>
+                </div>
+
+
+
+                <h3>Plataforma: </h3>
+
+                <div>
+                    <label for="pc">
+                        <input required id="pc" type="radio" name="plataforma" value="Pc">PC
+                    </label>
+                
+                    <label for="Playstation">
+                        <input id="Playstation" type="radio" name="plataforma" value="Playstation">Playstation
+                    </label>
+                </div>
+
+                <h3>Genero: </h3>
+
+                <div>
+                    <label for="rpg"><input id="rpg" type="checkbox" value="rpg">RPG</label>
+                    <label for="Acao"><input id="Acao" type="checkbox" value="Acao">Ação</label>
+                    <label for="Aventura"><input id="Aventura" type="checkbox" value="aventura">Aventura</label>
+                    <label for="fps"><input id="fps" type="checkbox" value="fps">FPS</label>
+                    <label for="estrategia"><input id="estrategia" type="checkbox" value="rpg">Estratégia</label>
+                    
+                    <label for="trailer">Link para trailer: <input required id="trailer" type="url"></label>
+                </div>
+
+                <input id="submitbtn" class="enviar-jogo" type="submit" value="Enviar">
+                
+            </form>
+
+            <div class="jogos-recomendados">
+                <h3>Jogos recomendados até o momento: </h3>
+                <ul id="lista-jogos-recomendados">
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
