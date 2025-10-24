@@ -61,12 +61,20 @@ html, body {
 .equipe {
     image-rendering: auto;
     display: flex;
-    gap: 30px;
-    padding: 20px;
+    padding: 10px;
     background-color: #C3B08F;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.equipe h3 {
+    margin:0;
 }
 
 .equipe img {
     border-radius: 100%;
     height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
