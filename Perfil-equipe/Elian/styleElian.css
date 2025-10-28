@@ -86,14 +86,14 @@ label {
 }
 
 
-.bloco-jogados {
+.bloco-projetos {
     background-color: #E1CBA5;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 5px;
 }
 
-.jogo {
+.projeto {
     background-color: #C3B08F;
     text-align: left;
     image-rendering: auto;
@@ -103,7 +103,7 @@ label {
     margin-bottom:  20px;
 }
 
-.jogo img {
+.projeto img {
     width:  100px;
     border-radius: 20%;
     padding: 10px;
@@ -111,33 +111,33 @@ label {
     
 }
 
-.info-jogo {
+.projeto-jogo {
     
     position: relative;
     flex-grow: 1;
 }
 
-.info-jogo p {
+.projeto-jogo p {
     position: absolute;
     font-size: 15px;
     top: 20px;
     left: 100px;
 }
 
-.info-jogo h3 {
+.projeto-jogo h3 {
     font-size: 20px;
     margin-left: -15px;
     margin-top: 10px;
 }
 
-.info-jogo h4 {
+.projeto-jogo h4 {
     position: absolute;
     left: -15px;
     top: 70px;
     margin: 0;
 }
 
-.info-jogo h5 {
+.projeto-jogo h5 {
     position: absolute;
     left: -15px;
     top: 95px;
