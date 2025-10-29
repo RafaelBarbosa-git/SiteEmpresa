@@ -7,17 +7,18 @@ html, body {
 
 
 .portifolio {
-    background-color: #E1CBA5;
+    background-color: rgb(190, 190, 190);
     padding: 10px;
+    padding-bottom:20px;
 }
 
 .produto {
-    background-color: #C3B08F;
+    background-color: #7c7c7c;
     text-align: left;
     image-rendering: auto;
     display: flex;
     gap: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     margin-bottom:  20px;
 }
 
@@ -46,7 +47,7 @@ html, body {
 .info-produto h3 {
     font-size: 20px;
     margin-left: -15px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .info-produto h4 {
@@ -60,11 +61,12 @@ html, body {
     image-rendering: auto;
     display: flex;
     padding: 10px;
-    background-color: #C3B08F;
+    background-color: #7c7c7c;
     align-items: center;
     border-radius: 10px;
     margin: 20px auto;
     text-align: center;
+    justify-content: center;
 }
 
 .equipe h3 {
@@ -76,10 +78,27 @@ html, body {
     height: 200px;
     width: 200px;
     object-fit: cover;
+
 }
 
 .perfil{
     text-align: center;
     margin: 10px;
     padding: 10px;
+}
+
+.equipe a:link {
+    color:rgb(0, 213, 255);
+}
+
+.equipe a:visited {
+    color:rgb(0, 213, 255);
+}
+
+.equipe a:hover {
+    color:rgb(255, 255, 255);
+}
+
+.equipe a:active {
+    color: black;
 }
