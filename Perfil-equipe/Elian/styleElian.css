@@ -93,6 +93,18 @@ label {
     padding-bottom: 5px;
 }
 
+.bloco-projetos a:link {
+    color:purple;
+}
+
+.bloco-projetos a:hover {
+    color:rgb(255, 255, 255);
+}
+
+.bloco-projetos a:active {
+    color: purple;
+}
+
 .projeto {
     background-color: #C3B08F;
     text-align: left;
