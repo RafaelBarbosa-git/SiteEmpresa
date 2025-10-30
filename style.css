@@ -106,3 +106,7 @@ html, body {
 .equipe a:active {
     color: black;
 }
+
+.contato{
+    font-size: large;
+}
