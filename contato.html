@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Syntaxis</title>
 </head>
 <body>
-    
+    <div class="contato-formulario">
+    <form action="contatar.html" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Digite seu email" required>
+        <br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" name="telefone" placeholder="Ex: (01) 40028922">
+        <br><br>
+        <label for="demanda">Marque o que deseja:<br>
+            <input type="radio" name="demanda" value="serviço">Contratar nossos serviços<br>
+            <input type="radio" name="demanda" value="duvida">Tirar uma dúvida<br>
+            <input type="radio" name="demanda" value="curriculo" required>Trabalhar conosco
+        </label>
+        <br><br>
+        <label for="especificar">Descreva sua demanda:</label>
+        <input type="text" name="especificar">
+        <br><br>
+        <button type="submit">Solicitar contato</button>
+
+    </form>
+</div>
 </body>
 </html>

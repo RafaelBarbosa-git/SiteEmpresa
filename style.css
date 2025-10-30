@@ -5,6 +5,10 @@ html, body {
     text-align: center;
 }
 
+.contato-formulario {
+    justify-content: center;
+    align-items: center;
+}
 
 .portifolio {
     background-color: rgb(190, 190, 190);
