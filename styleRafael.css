@@ -1,0 +1,27 @@
+html, body {
+    background-position: center center;
+    background: #0F1A5E;
+}
+
+.conteudo {
+    background: #008277;
+    width: 60%;
+    padding: 20px;
+    align-items: center;
+}
+html, body {
+    background: #162167;
+}
+
+.conteudo {
+    color: rgb(115, 4, 138);
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #008277;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.perfilRafael {
+    
+}
