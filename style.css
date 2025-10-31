@@ -1,8 +1,11 @@
 html, body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif       ;
+    background-image: url(imagens/fundo.png);
+    font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif       ;
     background-color: whitesmoke;
     padding: 5px;
     text-align: center;
+    color: #ffffff;
+
 }
 
 body a:link {
@@ -18,22 +21,50 @@ body a:hover {
 }
 
 body a:active {
-    color: rgb(5, 72, 85);
+    color: rgb(97, 214, 238);
 }
 
+.logo {
+    font-size: large;
+    background-color: rgba(245, 222, 179, 0);
+}
 
 .logo table, tr, td {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border-spacing: 15px;
+    border-spacing: 30px;
     border-collapse: separate;
 }
 
-.logo {
-    font-size:large;
-    background-color: rgba(6, 160, 6, 0.082);
+
+.logo button {
+    font-family: fantasy;
+    font-size: 70%;
+    color: white;
+    background-color: #ffffff00;
+    border: 2px solid rgba(245, 245, 245, 0);
+    transition: background-color 0.3s ease;
 }
+
+.logo button:hover {
+    background-color: rgba(255, 255, 255, 0.271);
+    cursor:pointer;
+    border-radius: 25%;
+    
+}
+
+
+
+.logo table img {
+    height: 95px;
+    width: auto;
+}
+.logo nav img {
+    height: 250px;
+    width: auto;
+}
+
 
 .contato-formulario {
     justify-content: center;
@@ -41,13 +72,13 @@ body a:active {
 }
 
 .portifolio {
-    background-color: rgb(190, 190, 190);
+    background-color: rgba(190, 190, 190, 0.278);
     padding: 10px;
     padding-bottom:20px;
 }
 
 .produto {
-    background-color: #7c7c7c;
+    background-color: #7c7c7c7c;
     text-align: left;
     image-rendering: auto;
     display: flex;
@@ -95,7 +126,7 @@ body a:active {
     image-rendering: auto;
     display: flex;
     padding: 10px;
-    background-color: #7c7c7c;
+    background-color: rgb(190, 190, 190, 0.278);
     align-items: center;
     border-radius: 10px;
     margin: 20px auto;
