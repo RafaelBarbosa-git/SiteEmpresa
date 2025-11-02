@@ -48,9 +48,9 @@ body a:active {
 }
 
 .logo button:hover {
-    background-color: rgba(255, 255, 255, 0.271);
+    background-color: rgba(255, 255, 255, 0.149);
     cursor:pointer;
-    border-radius: 25%;
+    border-radius: 15%;
     
 }
 
@@ -74,7 +74,7 @@ body a:active {
 .portifolio {
     background-color: rgba(190, 190, 190, 0.278);
     padding: 10px;
-    padding-bottom:20px;
+    padding-bottom:10px;
 }
 
 .produto {
@@ -83,8 +83,8 @@ body a:active {
     image-rendering: auto;
     display: flex;
     gap: 10px;
-    padding-bottom: 15px;
-    margin-bottom:  20px;
+    padding-bottom: 50px;
+    margin-bottom:  25px;
 }
 
 .produto img {
@@ -135,15 +135,15 @@ body a:active {
 }
 
 .equipe a:link {
-    color:rgb(0, 213, 255);
+    color:rgb(255, 255, 255);
 }
 
 .equipe a:visited {
-    color:rgb(0, 213, 255);
+    color:rgb(255, 255, 255);
 }
 
 .equipe a:hover {
-    color:rgb(255, 255, 255);
+    color:rgb(0, 153, 255);
 }
 
 .equipe a:active {
