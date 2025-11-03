@@ -4,7 +4,24 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     padding: 5px;
+    padding-top:60px;
     text-align: center;
+}
+
+.menu {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  /* Outros estilos para sua nav, como cor de fundo e altura */
+  background-color: #33333300;
+  color: white;
+  height: 60px; /* Exemplo de altura */
+  padding: 10px;
+  z-index: 1000; /* Garante que a nav fique sobre outros elementos */
+
+
 }
 
 body a:link, 
