@@ -65,6 +65,7 @@ h1 {
 .secao-conteudo h2 {
     color: #fff;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .tabela-habilidades {
@@ -99,6 +100,21 @@ h1 {
 
 .lista-hobbies li {
     margin-bottom: 5px;
+}
+
+.link-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1306c;
+    font-size: 2.5em;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.link-instagram:hover {
+    color: #ff4da6;
+    transform: scale(1.2);
 }
 
 .rodape-principal {

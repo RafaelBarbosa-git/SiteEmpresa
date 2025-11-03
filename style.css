@@ -1,61 +1,46 @@
 html, body {
     background-image: url(imagens/fundo.png);
-    font-family: 'Gill Sans','Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif       ;
     background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
     padding: 5px;
     text-align: center;
-    color: #ffffff;
-
 }
 
-body a:link {
-    color:rgb(7, 141, 168);
-}
-
+body a:link, 
 body a:visited {
-    color:rgb(7, 141, 168);
+    color: rgb(7, 141, 168);
 }
-
 body a:hover {
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
-
 body a:active {
     color: rgb(97, 214, 238);
 }
 
 .logo {
     font-size: large;
-    background-color: rgba(245, 222, 179, 0);
+    background-color: transparent;
 }
-
 .logo table, tr, td {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-spacing: 30px;
     border-collapse: separate;
 }
-
-
 .logo button {
     font-family: fantasy;
     font-size: 70%;
     color: white;
-    background-color: #ffffff00;
-    border: 2px solid rgba(245, 245, 245, 0);
+    background-color: transparent;
+    border: 2px solid transparent;
     transition: background-color 0.3s ease;
 }
-
 .logo button:hover {
-    background-color: rgba(255, 255, 255, 0.149);
-    cursor:pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
     border-radius: 15%;
-    
 }
-
-
-
 .logo table img {
     height: 95px;
     width: auto;
@@ -65,56 +50,42 @@ body a:active {
     width: auto;
 }
 
-
-.contato-formulario {
-    justify-content: center;
-    align-items: center;
-}
-
 .portifolio {
-    background-color: rgba(190, 190, 190, 0.278);
+    background-color: rgba(190, 190, 190, 0.28);
     padding: 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
 
 .produto {
     background-color: #7c7c7c7c;
     text-align: left;
-    image-rendering: auto;
     display: flex;
     gap: 10px;
     padding-bottom: 50px;
-    margin-bottom:  25px;
+    margin-bottom: 25px;
 }
-
 .produto img {
-    width:  100px;
+    width: 100px;
     border-radius: 20%;
     padding: 10px;
-    margin-right: 0;
-    
 }
-
 .info-produto {
     position: relative;
     flex-grow: 1;
 }
-
 .info-produto p {
     position: absolute;
     font-size: 15px;
     top: 20px;
     left: 100px;
-    margin:40px;
+    margin: 40px;
     max-width: 50%;
 }
-
 .info-produto h3 {
     font-size: 20px;
     margin-left: -15px;
     margin-top: 20px;
 }
-
 .info-produto h4 {
     position: absolute;
     left: -15px;
@@ -123,63 +94,45 @@ body a:active {
 }
 
 .equipe {
-    image-rendering: auto;
     display: flex;
     padding: 10px;
-    background-color: rgb(190, 190, 190, 0.278);
+    background-color: rgba(190, 190, 190, 0.28);
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     margin: 20px auto;
     text-align: center;
-    justify-content: center;
 }
-
-.equipe a:link {
-    color:rgb(255, 255, 255);
-}
-
+.equipe a:link,
 .equipe a:visited {
-    color:rgb(255, 255, 255);
+    color: white;
 }
-
 .equipe a:hover {
-    color:rgb(0, 153, 255);
+    color: rgb(0, 153, 255);
 }
-
 .equipe a:active {
     color: black;
 }
-
-.equipe h3 {
-    margin:0;
-}
-
 .equipe img {
     border-radius: 100%;
     height: 200px;
     width: 200px;
     object-fit: cover;
-
 }
 
-.perfil{
+.perfil {
     text-align: center;
     margin: 10px;
     padding: 10px;
 }
-
-
-
-.contato{
+.contato {
     font-size: large;
 }
 
 .voltar-ao-topo {
     float: left;
-    margin-left:1%;
-    
+    margin-left: 1%;
 }
-
 .voltar-ao-topo img {
     height: 50px;
 }
