@@ -1,13 +1,13 @@
 html, body {
     background-position: center center;
-    background: #7592A5;
+    background: #1E1B4B;
 }
 
 .conteudo {
-    color: #7A4342;
+    color: #1F2937;
     padding: 20px;
     padding-top: 10px;
-    background-color: #7A7A42;
+    background-color: #FFFFFF;
     max-width: 70%;
     margin: 0 auto;
 }

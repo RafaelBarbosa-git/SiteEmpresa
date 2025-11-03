@@ -10,13 +10,13 @@ html, body {
 
 body a:link, 
 body a:visited {
-    color: rgb(7, 141, 168);
+    color: white;
 }
 body a:hover {
     color: rgb(0, 0, 0);
 }
 body a:active {
-    color: rgb(97, 214, 238);
+    color: white;
 }
 
 .logo {
