@@ -7,7 +7,6 @@ html, body {
     text-align: center;
 }
 
-
 body a:link, 
 body a:visited {
     color: white;
@@ -53,45 +52,63 @@ body a:active {
 
 .portifolio {
     background-color: rgba(190, 190, 190, 0.28);
-    padding: 10px;
-    padding-bottom: 10px;
+    padding: 40px 10px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portifolio h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .produto {
-    background-color: #7c7c7c7c;
-    text-align: left;
     display: flex;
-    gap: 10px;
-    padding-bottom: 50px;
-    margin-bottom: 25px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(60, 60, 60, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+    gap: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.produto:hover {
+    transform: scale(1.02);
+    background-color: rgba(80, 80, 80, 0.6);
+}
+
 .produto img {
-    width: 100px;
-    border-radius: 20%;
-    padding: 10px;
+    width: 260px;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+
 .info-produto {
-    position: relative;
-    flex-grow: 1;
+    flex: 1;
+    text-align: left;
+    color: white;
 }
-.info-produto p {
-    position: absolute;
-    font-size: 15px;
-    top: 20px;
-    left: 100px;
-    margin: 40px;
-    max-width: 50%;
-}
+
 .info-produto h3 {
-    font-size: 20px;
-    margin-left: -15px;
-    margin-top: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #00bfff;
 }
-.info-produto h4 {
-    position: absolute;
-    left: -15px;
-    top: 100px;
-    margin: 0;
+
+.info-produto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.portifolio a:nth-child(even) .produto {
+    flex-direction: row-reverse;
 }
 
 .equipe {
@@ -126,26 +143,74 @@ body a:active {
     margin: 10px;
     padding: 10px;
 }
+
 .contato {
     font-size: large;
 }
 
 .voltar-ao-topo {
-    position: fixed;  /* Fixa o elemento na tela */
-    bottom: 20px;     /* Distância de 20px do fundo */
-    height: 65px;     /*tamanho*/
+    position: fixed;
+    bottom: 20px;
+    height: 65px;
     width: auto;
     float: left;
     margin-left: 1%;
-    
 }
-
 .voltar-ao-topo img {
     height: 50px;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
 }
-
 .voltar-ao-topo img:hover {
     opacity: 1;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 15px;
+}
+.img-topo {
+    display: block;
+    width: 70%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0 auto 25px auto;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+.img-topo:hover {
+    transform: scale(1.02);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.voltar {
+    display: inline-block;
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin: 20px 0 40px 0;
+}
+.voltar:hover {
+    background: linear-gradient(135deg, #5aa3f1, #3f8ae0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }

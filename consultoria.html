@@ -6,49 +6,22 @@
     <title>Consultoria e Otimização de Arquitetura de Código</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            background-color: #0a0a0a;
-            color: #fff;
-            font-family: Arial, sans-serif;
-        }
-        .conteudo {
-            max-width: 900px;
-            margin: 80px auto;
-            background: rgba(255, 255, 255, 0.08);
-            padding: 40px;
-            border-radius: 15px;
-        }
         .conteudo img {
+            width: 150px;
+            border-radius: 12px;
             display: block;
-            width: 200px;
-            border-radius: 10px;
             margin: 0 auto 25px auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        p {
-            text-align: justify;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .voltar {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .voltar a {
-            color: cyan;
-            text-decoration: none;
-        }
-        .voltar a:hover {
-            color: white;
+        .conteudo img:hover {
+            transform: scale(1.03);
         }
     </style>
 </head>
 <body>
     <div class="conteudo">
-        <img src="eu4.jpg" alt="Consultoria de Código">
+        <img src="imagens/projeto2.jpg.jpeg" alt="Consultoria de Código">
         <h1>Consultoria e Otimização de Arquitetura de Código</h1>
         <p>
             <strong>"Code Refactoring & Scaling"</strong> – Auditoria e Otimização de Sistemas.  
@@ -56,9 +29,6 @@
             Realizamos auditorias completas e aplicamos refatorações para tornar o software escalável, limpo e seguro — pronto para o crescimento.
         </p>
     </div>
-
-    <div class="voltar">
-        <a href="index.html">← Voltar ao menu</a>
-    </div>
+    <a href="index.html" class="voltar">← Voltar ao menu</a>
 </body>
 </html>
