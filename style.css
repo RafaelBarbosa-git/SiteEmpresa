@@ -56,6 +56,11 @@ body a:active {
     border-radius: 15px;
     width: 90%;
     margin: 0 auto;
+
+}
+
+.portifolio a {
+    text-decoration: none;
 }
 
 .portifolio h2 {
@@ -146,6 +151,7 @@ body a:active {
 
 .contato {
     font-size: large;
+    
 }
 
 .voltar-ao-topo {
@@ -213,4 +219,58 @@ p {
     background: linear-gradient(135deg, #5aa3f1, #3f8ae0);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+.contato-formulario {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: left; 
+}
+
+.contato-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato-formulario input:not([type="radio"]), 
+.contato-formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.bloco-radio {
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.bloco-radio label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.contato-formulario button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: whitesmoke;
+}
+
+.contato-formulario button:hover {
+    transform: scale(1.02);
+}
+
+.contato-formulario button a {
+    color:black;
+    text-decoration: none;
+
 }
