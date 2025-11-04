@@ -15,16 +15,35 @@ html, body {
     border-bottom: #000 1px solid;
 }
 
+.corpo {
+    max-width: 1250px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FAD2A2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------------------------------
+   Estilo dos botões/nome no topo
+   - `.topoNome` centraliza o bloco com o nome e a pequena tabela de botões
+   - Usamos `border-collapse: collapse` para controlar bordas da tabela
+   - O seletor `tr > * + *` aplica um separador (border-left) entre as células
+   - `button` tem estilo leve e uma transição para hover
+   --------------------------------------------------------------------------- */
 .topoNome {
     text-align: center;
 }
 .topoNome table{
     margin: 0 auto;
+    border-collapse: collapse;
 }
 
-.topoNome table tr td{
+.topoNome table tr > * + *{
+    /* seleciona todas as células exceto a primeira e aplica um separador vertical */
     padding: 4px;
-    
+    border-left: 3px solid #000;
 }
 
 .topoNome button {
@@ -39,4 +58,59 @@ html, body {
     background-color: rgba(255, 255, 255, 0.15);
     cursor: pointer;
     border-radius: 15%;
+}
+
+/* ---------------------------------------------------------------------------
+   Bloco de perfil (imagem + texto)
+
+   Estrutura HTML esperada (exemplo):
+   <div class="descricaoPerfil">
+     <img class="perfil-img" src="...">
+     <div class="perfil-texto">
+       <h2 class="perfil"><span class="titulo-sobre">Sobre mim</span></h2>
+       <p>Texto do parágrafo...</p>
+     </div>
+   </div>
+
+   Explicação das classes abaixo:
+   - `.descricaoPerfil`: container flex que coloca a imagem à esquerda e o bloco de texto à direita.
+     Usamos `align-items: flex-start` para que o topo do bloco de texto fique alinhado com o topo da imagem,
+     o que facilita deslocar o parágrafo alguns pixels abaixo do título.
+   - `.perfil-img`: controla o tamanho/raio da imagem; `flex: 0 0 auto` garante que a imagem mantenha o tamanho fixo
+   - `.perfil-texto`: bloco que engloba o título e o parágrafo; ocupa o espaço restante (flex: 1)
+   - `.perfil`: estiliza o `h2` (tamanho da fonte e remoção de margens padrão)
+   - `.perfil-texto p`: adiciona `margin-top` para que o parágrafo comece um pouco abaixo do título
+     (ajuste esse valor para aumentar/diminuir o deslocamento)
+   --------------------------------------------------------------------------- */
+.descricaoPerfil {
+    display: flex;
+    gap: 24px; /* espaço entre imagem e bloco de texto */
+    align-items: flex-start; /* alinha ao topo do bloco de texto */
+}
+
+.perfil-img {
+    flex: 0 0 auto; /* tamanho fixo da imagem */
+    width: 160px; /* mantido do HTML */
+    border-radius: 4px;
+}
+
+.perfil-texto {
+    flex: 1 1 auto; /* ocupa o restante do espaço disponível */
+}
+
+.perfil {
+    font-size: 36px;
+    image-rendering: auto;
+    margin: 0; /* remover margem extra do h2 dentro do bloco de texto */
+    background-color: #FAD2A2;
+}
+
+.perfil .perfilCorpo {
+    /* classe auxiliar (pode ser usada para envolver partes do conteúdo do perfil) */
+    display: inline-block;
+}
+
+/* Descer o parágrafo um pouco abaixo do título. */
+.perfil-texto p {
+    margin-top: 8px;
 }
