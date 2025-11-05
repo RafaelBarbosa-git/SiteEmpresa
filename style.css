@@ -1,5 +1,5 @@
 html, body {
-    background-image: url(imagens/fundo.png);
+    background-image: url(imagens/fundo08.png);
     background-color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
@@ -19,6 +19,8 @@ body a:active {
 }
 
 .logo {
+    position:center center;  /* Fixa o elemento na tela */
+    bottom: 20px;
     font-size: large;
     background-color: transparent;
 }
@@ -27,6 +29,7 @@ body a:active {
     margin: 0 auto;
     border-spacing: 30px;
     border-collapse: separate;
+    color: #000;
 }
 .logo button {
     font-family: fantasy;
@@ -119,13 +122,19 @@ body a:active {
 .equipe {
     display: flex;
     padding: 10px;
-    background-color: rgba(190, 190, 190, 0.28);
+    background-color: rgba(190, 190, 190, 0);
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     margin: 20px auto;
     text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
 }
+.equipe:hover{
+    transform: scale(1.02);
+}
+
 .equipe a:link,
 .equipe a:visited {
     color: white;
