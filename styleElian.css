@@ -11,6 +11,23 @@ body {
     
 }
 
+body a:link {
+    color: #ffffff;
+}
+
+body a:visited {
+    color: #ffffff;
+}
+
+body a:hover {
+    color: #00bfff;
+}
+
+body a:active {
+    color: #ffffff;
+}   
+
+
 ol {
     font-weight: bold;
 }
@@ -49,7 +66,7 @@ label {
 }
 
 .conteudo {
-    color: #00bfff;
+    color: #ffffff;
     padding: 20px;
     padding-top: 10px;
     background-color: rgba(190, 190, 190, 0.28);
@@ -86,21 +103,6 @@ label {
     padding-bottom: 5px;
 }
 
-body a:link {
-    color:#00bfff;
-}
-
-body a:visited {
-    color:#00bfff;
-}
-
-body a:hover {
-    color:rgb(255, 255, 255);
-}
-
-body a:active {
-    color: #00bfff;
-}   
 
 .projeto {
     background-color: rgba(87, 86, 86, 0.678);
@@ -167,9 +169,8 @@ body a:active {
 
 
 .lista-de-jogos {
-    color: #00bfff;
+    color: #ffffff;
     padding: 20px; 
-    background-color: rgba(20, 243, 0, 0.39);
     max-width: 800px;
 
 }
