@@ -220,3 +220,11 @@ html, body {
     margin-right: 0;
     
 }
+
+.voltar--menu img {
+    position: fixed;  /* Fixa o elemento na tela */
+    bottom: 20px;     /* Distância de 20px do fundo */
+    right: 20px;      /* Distância de 20px da direita */
+    height: 65px;     /*tamanho*/
+    width: auto;
+}
