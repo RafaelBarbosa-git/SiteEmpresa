@@ -3,8 +3,16 @@ html, body {
     background-color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
-    padding: 5px;
     text-align: center;
+    margin:auto;
+    
+}
+
+.quem-somos {
+    padding: 40px 10px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 body a:link, 
@@ -12,18 +20,29 @@ body a:visited {
     color: white;
 }
 body a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(0, 153, 255);
 }
 body a:active {
-    color: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .logo {
-    position:center center;  /* Fixa o elemento na tela */
-    bottom: 20px;
+    position:center;  /* Fixa o elemento na tela */
     font-size: large;
     background-color: transparent;
 }
+
 .logo table, tr, td {
     text-align: center;
     margin: 0 auto;
@@ -31,23 +50,26 @@ body a:active {
     border-collapse: separate;
     color: #000;
 }
+
 .logo button {
     font-family: fantasy;
     font-size: 70%;
-    color: white;
     background-color: transparent;
     border: 2px solid transparent;
     transition: background-color 0.3s ease;
 }
+
 .logo button:hover {
     background-color: rgba(255, 255, 255, 0.15);
     cursor: pointer;
     border-radius: 15%;
 }
+
 .logo table img {
     height: 95px;
     width: auto;
 }
+
 .logo nav img {
     height: 250px;
     width: auto;
@@ -135,16 +157,6 @@ body a:active {
     transform: scale(1.02);
 }
 
-.equipe a:link,
-.equipe a:visited {
-    color: white;
-}
-.equipe a:hover {
-    color: rgb(0, 153, 255);
-}
-.equipe a:active {
-    color: black;
-}
 .equipe img {
     border-radius: 100%;
     height: 200px;
@@ -171,11 +183,13 @@ body a:active {
     float: left;
     margin-left: 1%;
 }
+
 .voltar-ao-topo img {
     height: 50px;
     opacity: 0.5;
     transition: opacity 0.3s ease-in-out;
 }
+
 .voltar-ao-topo img:hover {
     opacity: 1;
 }
@@ -187,6 +201,7 @@ body a:active {
     padding: 40px;
     border-radius: 15px;
 }
+
 .img-topo {
     display: block;
     width: 70%;
@@ -200,15 +215,7 @@ body a:active {
 .img-topo:hover {
     transform: scale(1.02);
 }
-h1 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-p {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.6;
-}
+
 
 .voltar {
     display: inline-block;
