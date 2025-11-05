@@ -131,19 +131,92 @@ html, body {
 .tabela-habilidades th {
     border: #000;
     border-style: solid;
-    padding: 8px;
+    padding: 7px;
 }
 
 .tabela-habilidades td {
     border: #00000034;
     border-style: solid;
-    padding: 8px;
+    padding: 7px;
 }
 
 
 .tabela-habilidades {
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 7px;
     text-align: left;
-    font-size: 1.40em;
+    font-size: 1.33em;
+}
+
+.colunas-perfil {
+    /* container flex para as 3 colunas (habilidades / características / hobbies) */
+    display: flex;
+    gap: 16px;             /* espaço entre colunas */
+    align-items: flex-start;
+    flex-wrap: wrap;       /* permite quebrar em telas pequenas */
+}
+
+.colunas-perfil > .detalhesPerfil {
+    flex: 1 1 0;           /* ocupa mais espaço (ex.: 50% aprox) */
+    box-sizing: border-box;
+    padding-right: 12px;
+}
+
+.colunas-perfil > .caracteristicas,
+.colunas-perfil > .hobbies {
+    flex: 1 1 0;           /* cada uma ocupa 1 parte (ex.: 25% aprox) */
+    box-sizing: border-box;
+}
+
+/* Responsividade: em telas pequenas, empilha os blocos */
+@media (max-width: 700px) {
+    .colunas-perfil {
+        flex-direction: column;
+    }
+}
+
+.caracteristicas p {
+    margin-top: 0.24em;   /* reduz espaço acima do parágrafo */
+    margin-bottom: 0.2em; /* reduz espaço abaixo do parágrafo */
+    line-height: 1.2;     /* facilita leitura com menor espaçamento */
+    text-indent: 1em;     /* recua a primeira linha do parágrafo */
+}
+
+.projetos {
+    background-color: #E1CBA5;
+    padding: 15px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.projetos a:link {
+    color:purple;
+}
+
+.projetos a:hover {
+    color:rgb(255, 255, 255);
+}
+
+.projetos a:active {
+    color: purple;
+}
+
+.projeto {
+    background-color: #C3B08F;
+    text-align: left;
+    image-rendering: auto;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 5px;
+    margin-bottom:  20px;
+    border-radius: 10px;
+
+}
+
+.projeto img {
+    width:  100px;
+    border-radius: 20%;
+    padding: 10px;
+    margin-right: 0;
+    
 }
