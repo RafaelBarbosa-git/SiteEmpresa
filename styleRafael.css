@@ -61,21 +61,8 @@ html, body {
 }
 
 /* ---------------------------------------------------------------------------
-   Bloco de perfil (imagem + texto)
-
-   Estrutura HTML esperada (exemplo):
-   <div class="descricaoPerfil">
-     <img class="perfil-img" src="...">
-     <div class="perfil-texto">
-       <h2 class="perfil"><span class="titulo-sobre">Sobre mim</span></h2>
-       <p>Texto do parágrafo...</p>
-     </div>
-   </div>
-
-   Explicação das classes abaixo:
-   - `.descricaoPerfil`: container flex que coloca a imagem à esquerda e o bloco de texto à direita.
-     Usamos `align-items: flex-start` para que o topo do bloco de texto fique alinhado com o topo da imagem,
-     o que facilita deslocar o parágrafo alguns pixels abaixo do título.
+   - container flex que coloca a imagem à esquerda e o bloco de texto à direita.
+     `align-items: flex-start` para que o topo do bloco de texto fique alinhado com o topo da imagem,
    - `.perfil-img`: controla o tamanho/raio da imagem; `flex: 0 0 auto` garante que a imagem mantenha o tamanho fixo
    - `.perfil-texto`: bloco que engloba o título e o parágrafo; ocupa o espaço restante (flex: 1)
    - `.perfil`: estiliza o `h2` (tamanho da fonte e remoção de margens padrão)
@@ -90,12 +77,18 @@ html, body {
 
 .perfil-img {
     flex: 0 0 auto; /* tamanho fixo da imagem */
-    width: 160px; /* mantido do HTML */
-    border-radius: 4px;
+    width: 160px;
+    border-radius: 5px;
 }
 
 .perfil-texto {
     flex: 1 1 auto; /* ocupa o restante do espaço disponível */
+}
+
+.separadorPerfil {
+    border: none;
+    border-top: 2px solid #000;
+    margin: 20px 0;
 }
 
 .perfil {
@@ -113,4 +106,44 @@ html, body {
 /* Descer o parágrafo um pouco abaixo do título. */
 .perfil-texto p {
     margin-top: 8px;
+}
+
+.contato-E-Linha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+.contato-E-Linha hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 3px solid #000;
+    margin: 0;
+}
+
+.link-icone-img {
+    width: 50px;
+    display: block
+}
+
+.tabela-habilidades th {
+    border: #000;
+    border-style: solid;
+    padding: 8px;
+}
+
+.tabela-habilidades td {
+    border: #00000034;
+    border-style: solid;
+    padding: 8px;
+}
+
+
+.tabela-habilidades {
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.40em;
 }
