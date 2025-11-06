@@ -1,28 +1,33 @@
 html, body {
     background-position: center center;
-    background: #f4ecd8;
+    background: #ffbb0f00;
     margin: 0;
     padding: 0;
 }
 
+body{
+    background-image: url(imagens/fundo08.png);
+    background-position: center center;
+}
 .topo {
-    color: #1F2937;
+    color: #ffffff;
     padding: 20px;
     padding-top: 10px;
-    background-color: #FAD2A2;
+    background-color: #2f00ff00;
     max-width: 100%;
     margin: 0 auto;
-    border-bottom: #000 1px solid;
+    border-bottom: #ffffff 1px solid;
 }
 
 .corpo {
     max-width: 1250px;
+    color: #ddd;
     margin: 20px auto;
     padding: 20px;
-    background-color: #FAD2A2;
+    background-color: #ffffff38;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 /* ---------------------------------------------------------------------------
@@ -43,13 +48,13 @@ html, body {
 .topoNome table tr > * + *{
     /* seleciona todas as células exceto a primeira e aplica um separador vertical */
     padding: 4px;
-    border-left: 3px solid #000;
+    border-left: 3px solid #ffffff;
 }
 
 .topoNome button {
     font-family: fantasy;
     font-size: 17px;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: transparent;
     border: 3px solid transparent;
     transition: background-color 0.3s ease;
@@ -87,7 +92,7 @@ html, body {
 
 .separadorPerfil {
     border: none;
-    border-top: 2px solid #000;
+    border-top: 2px solid #ffffff;
     margin: 20px 0;
 }
 
@@ -95,7 +100,7 @@ html, body {
     font-size: 36px;
     image-rendering: auto;
     margin: 0; /* remover margem extra do h2 dentro do bloco de texto */
-    background-color: #FAD2A2;
+    background-color: #2b01ff1b;
 }
 
 .perfil .perfilCorpo {
@@ -119,7 +124,7 @@ html, body {
 .contato-E-Linha hr {
     flex-grow: 1;
     border: none;
-    border-top: 3px solid #000;
+    border-top: 3px solid #ffffff;
     margin: 0;
 }
 
@@ -129,13 +134,13 @@ html, body {
 }
 
 .tabela-habilidades th {
-    border: #000;
+    border: #ffffff;
     border-style: solid;
     padding: 7px;
 }
 
 .tabela-habilidades td {
-    border: #00000034;
+    border: #ffffff34;
     border-style: solid;
     padding: 7px;
 }
@@ -183,14 +188,14 @@ html, body {
 }
 
 .projetos {
-    background-color: #E1CBA5;
+    background-color: #5555555a;
     padding: 15px;
     padding-bottom: 5px;
     border-radius: 10px;
 }
 
 .projetos a:link {
-    color:purple;
+    color:rgb(0, 0, 0);
 }
 
 .projetos a:hover {
@@ -198,11 +203,12 @@ html, body {
 }
 
 .projetos a:active {
-    color: purple;
-}
+    color: rgb(0, 0, 0);
+} 
 
 .projeto {
-    background-color: #C3B08F;
+    background-color: #f2efef7f;
+
     text-align: left;
     image-rendering: auto;
     display: flex;

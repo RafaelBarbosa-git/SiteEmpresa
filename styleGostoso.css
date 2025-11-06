@@ -21,6 +21,14 @@ body {
     width: auto;
 }
 
+.equipe img{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    height: 80px;
+    width: auto;
+}
+
 ol {
     font-weight: bold;
 }
@@ -30,10 +38,6 @@ ul li {
     
 }
 
-.pretendo-jogar{
-    font-weight: bold;
-    margin:5px;
-}
 
 label {
     font-weight: bold;
@@ -43,14 +47,6 @@ label {
     gap:5px;
 }
 
-.enviar-jogo {
-    border: 1px rgb(211, 73, 73) solid;
-    color:rgb(251, 2, 251);
-    font-weight: bold;
-    display: flex;
-    margin-left: 100px;
-    margin-top: 10px;
-}
 
 
 .tabela{
@@ -104,63 +100,9 @@ label {
 }
 
 
-.bloco-projetos {
-    background-color: #ffffff;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-}
 
-.projeto {
-    background-color: #ffffff;
-    text-align: left;
-    image-rendering: auto;
-    display: flex;
-    gap: 20px;
-    padding-bottom: 5px;
-    margin-bottom:  20px;
-}
 
-.projeto img {
-    width:  100px;
-    border-radius: 20%;
-    padding: 10px;
-    margin-right: 0;
-    
-}
 
-.projeto-jogo {
-    
-    position: relative;
-    flex-grow: 1;
-}
-
-.projeto-jogo p {
-    position: absolute;
-    font-size: 15px;
-    top: 20px;
-    left: 100px;
-}
-
-.projeto-jogo h3 {
-    font-size: 20px;
-    margin-left: -15px;
-    margin-top: 10px;
-}
-
-.projeto-jogo h4 {
-    position: absolute;
-    left: -15px;
-    top: 70px;
-    margin: 0;
-}
-
-.projeto-jogo h5 {
-    position: absolute;
-    left: -15px;
-    top: 95px;
-    margin: 0;
-}
 
 .menu {
     background-color: rgba(255, 255, 255, 0.79);
