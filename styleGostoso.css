@@ -15,19 +15,62 @@ body {
 
 .voltar--menu img {
     position: fixed;  /* Fixa o elemento na tela */
-    bottom: 20px;     /* Distância de 20px do fundo */
+    bottom: 35px;     /* Distância de 20px do fundo */
     right: 20px;      /* Distância de 20px da direita */
     height: 65px;     /*tamanho*/
     width: auto;
+    gap: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    justify-content: space-between;
+
+}
+
+.voltar--menu :hover{
+    transform: scale(1.3);
 }
 
 .equipe img{
     position: fixed;
-    bottom: 80px;
+    bottom: 110px;
     right: 20px;
-    height: 80px;
+    height: 70px;
     width: auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    justify-content: space-between;
 }
+
+.equipe :hover{
+    transform: scale(1.3);
+}
+
+.portfolio img{
+    position: fixed;
+    bottom: 190px;
+    right: 20px;
+    height: 70px;
+    width: auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    justify-content: space-between;
+}
+
+.portfolio :hover{
+    transform: scale(1.3);
+}
+
+.contato img{
+    position: fixed;
+    bottom: 270px;
+    right: 20px;
+    height: 70px;
+    width: auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    justify-content: space-between;
+}
+
+.contato :hover{
+    transform: scale(1.3);
+}
+
 
 ol {
     font-weight: bold;
@@ -100,10 +143,6 @@ label {
 }
 
 
-
-
-
-
 .menu {
     background-color: rgba(255, 255, 255, 0.79);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -142,8 +181,9 @@ label {
     padding: 15px;
 }
  
-.Instagram{
+.Instagram img{
     position: relative;
-    left: 320px;
+    left: 350px;
+    
 }
 
