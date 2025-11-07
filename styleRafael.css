@@ -227,7 +227,7 @@ body{
     
 }
 
-.voltar--menu img {
+.contato img {
     position: fixed;  /* Fixa o elemento na tela */
     bottom: 35px;     /* Distância de 20px do fundo */
     right: 20px;      /* Distância de 20px da direita */
@@ -239,7 +239,7 @@ body{
 
 }
 
-.voltar--menu :hover{
+.contato :hover{
     transform: scale(1.3);
 }
 
@@ -271,7 +271,7 @@ body{
     transform: scale(1.3);
 }   
 
-.contato img{
+.voltar--menu img{
     position: fixed;
     bottom: 270px;
     right: 20px;
@@ -281,6 +281,6 @@ body{
     justify-content: space-between;
 }
 
-.contato :hover{
+.voltar--menu :hover{
     transform: scale(1.3);
 }
