@@ -140,7 +140,7 @@ h1 {
     transform: scale(1.3);
 }
 
-.equipe img{
+.equipe__ img{
     position: fixed;
     bottom: 110px;
     right: 20px;
@@ -150,7 +150,7 @@ h1 {
     justify-content: space-between;
 }
 
-.equipe :hover{
+.equipe__ :hover{
     transform: scale(1.3);
 }
 
