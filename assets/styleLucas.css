@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background-image: url('LucasV/fundo_02.png');
+    background-image: url('../LucasV/fundo_02.png');
     background-position: center center;
 
     

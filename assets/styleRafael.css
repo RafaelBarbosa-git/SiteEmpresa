@@ -6,7 +6,7 @@ html, body {
 }
 
 body{
-    background-image: url(imagens/fundo08.png);
+    background-image: url(../imagens/fundo08.png);
     background-position: center center;
 }
 .topo {
