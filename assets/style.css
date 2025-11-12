@@ -44,6 +44,10 @@ p {
 }
 
 .logo table, tr, td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
     text-align: center;
     margin: 0 auto;
     border-spacing: 30px;
@@ -80,7 +84,7 @@ p {
 
 .portifolio {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
     max-width: 90%;
     margin: 0 auto;
     grid-gap: 20px;
@@ -148,6 +152,17 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     text-align: justify;
+}
+
+.depoimentos {
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(190, 190, 190, 0.28);
+
+}
+
+.avaliacao {
+    background-color: rgba(60, 60, 60, 0.5);
 }
 
 .equipe {
